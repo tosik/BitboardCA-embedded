@@ -1,5 +1,9 @@
 = CHANGELOG =
 
+== BitboardCA for embedded 0.3 ==
+2016-11-16
+ * [BIG] Removes standard and external libraries and make compilable for a microcomputer.
+
 == BitboardCA 0.2 ==
 2009-12-12
  * [BIG] Added Generation Outer-Totalistic CA. see sample/starwars.cpp
