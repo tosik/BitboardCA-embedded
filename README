@@ -1,14 +1,3 @@
-= BitboardCA README =
+= BitboardCA for embedded README =
 
-BitboardCA is an opensource C++ Libraries, Cellular Automata using Bitboard algorithm <http://en.wikipedia.org/wiki/Bitboard>.
-
-Required intalled CppUnit on your system if you run test.
-type like this and run.
-
-(RedHat, CentOS, Fedora)
-  > yum -y install cppunit-devel
-(Debian, Ubuntu)
-  > apt-get install libcppunit-dev
-(MacOSX with homebrew)
-  > brew install cppunit
-
+BitboardCA is an opensource C++ libraries without external libraries, Cellular Automata using Bitboard algorithm <http://en.wikipedia.org/wiki/Bitboard>.
