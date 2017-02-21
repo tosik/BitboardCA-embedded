@@ -12,7 +12,6 @@ namespace BitboardCA
   {
     protected:
       unsigned int m_States;
-      OuterTotalisticCA * m_pInnerCA;
       LargeBitboard ** m_pWeakList;
 
     public:
@@ -20,7 +19,6 @@ namespace BitboardCA
       virtual ~MultiStateOuterTotalisticCA();
       virtual void Step() = 0;
       void Randomize();
-      void SetInnerCAInstance(OuterTotalisticCA * inner_ca);
 
       unsigned int GetSizeX()
       {

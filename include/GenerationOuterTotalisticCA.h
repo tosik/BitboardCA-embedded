@@ -12,8 +12,12 @@ namespace BitboardCA
 	class GenerationOuterTotalisticCA
 		: public MultiStateOuterTotalisticCA
 	{
+    private:
+      OuterTotalisticCA * m_pInnerCA;
+
 		public:
 			GenerationOuterTotalisticCA(unsigned int size_x, unsigned int size_y, unsigned int states);
+      void SetInnerCAInstance(OuterTotalisticCA * inner_ca);
 			void Step();
 	};
 

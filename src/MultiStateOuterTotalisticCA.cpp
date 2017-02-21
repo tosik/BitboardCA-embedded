@@ -5,7 +5,6 @@ using namespace BitboardCA;
 
 MultiStateOuterTotalisticCA::MultiStateOuterTotalisticCA(unsigned int size_x, unsigned int size_y, unsigned int states)
   : m_States(states)
-  , m_pInnerCA(0)
 {
   if ( states < 2 )
   {
@@ -24,17 +23,9 @@ MultiStateOuterTotalisticCA::~MultiStateOuterTotalisticCA()
     delete (m_pWeakList[i]);
 }
 
-void MultiStateOuterTotalisticCA::Step()
-{
-}
-
 void MultiStateOuterTotalisticCA::Randomize()
 {
   m_pWeakList[m_States - 1]->Randomize();
 }
 
-void MultiStateOuterTotalisticCA::SetInnerCAInstance(OuterTotalisticCA * inner_ca)
-{
-  m_pInnerCA = inner_ca;
-}
 

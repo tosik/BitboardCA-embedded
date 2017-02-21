@@ -20,7 +20,8 @@ namespace BitboardCA
           Bitboard board_f, Bitboard board_g, Bitboard board_h);
 
     protected:
-      virtual Bitboard Rule(Bitboard board, Bitboard s0, Bitboard s1, Bitboard s2, Bitboard s3, Bitboard s4) = 0;
+      virtual Bitboard Rule(Bitboard board, Bitboard s0, Bitboard s1, Bitboard s2, Bitboard s3,
+            Bitboard s4, Bitboard s5, Bitboard s6, Bitboard s7, Bitboard s8) = 0;
   };
 
 }
