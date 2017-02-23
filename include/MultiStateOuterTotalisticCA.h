@@ -2,13 +2,13 @@
 
 #include "LargeBitboard.h"
 #include "OuterTotalisticCA.h"
-#include "IViewableBitboard.h"
+#include "IBasicBitboardCA.h"
 
 
 namespace BitboardCA
 {
   class MultiStateOuterTotalisticCA
-    : public IViewableBitboard
+    : public IBasicBitboardCA
   {
     protected:
       unsigned int m_States;
@@ -52,4 +52,3 @@ namespace BitboardCA
   };
 
 }
-

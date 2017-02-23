@@ -5,7 +5,7 @@ using namespace BitboardCA;
 
 GenerationOuterTotalisticCA::GenerationOuterTotalisticCA(unsigned int size_x, unsigned int size_y, unsigned int states)
 	: MultiStateOuterTotalisticCA(size_x, size_y, states)
-  , m_pInnerCA(0)
+  	, m_pInnerCA(0)
 {
 }
 
@@ -47,7 +47,7 @@ void GenerationOuterTotalisticCA::Step()
 	m_pWeakList[m_States - 1]->Copy(&C);
 }
 
-void GenerationOuterTotalisticCA::SetInnerCAInstance(OuterTotalisticCA * inner_ca)
+void GenerationOuterTotalisticCA::SetInnerCAInstance(OuterTotalisticCA * innerCA)
 {
-  m_pInnerCA = inner_ca;
+	m_pInnerCA = innerCA;
 }
